@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/linkedin_banner_v4.jpg" alt="Maciej.pro - Less noise. More language." width="100%" style="border-radius: 12px; margin-bottom: 20px;" />
+  <img src="./public/linkedin_banner_v4.jpg" alt="Maciej.pro - Less noise. More language." width="100%" />
 
   <h1>🚀 maciej.pro | Portfolio & EdTech Space</h1>
   
