@@ -22,6 +22,21 @@ const apps = [
     url: "https://journal.cribro.pro",
     label: "journal.cribro.pro",
     status: "live",
+    imageUrl: "https://d2xsxph8kpxj0f.cloudfront.net/310519663489474725/R7k6sYKTkLq9Ymom2yutju/og_cribro_journal_45f128b3.png",
+  },
+  {
+    id: "cribro-coach",
+    name: "Cribro Coach",
+    tagPl: "Trening słownictwa i wymowy AI",
+    tagEn: "AI Vocabulary & Pronunciation Coach",
+    descPl:
+      "Aplikacja do ćwiczenia słownictwa i wymowy z wykorzystaniem AI. Automatyczna analiza wymowy i natychmiastowy feedback.",
+    descEn:
+      "An app for practicing vocabulary and pronunciation using AI. Automatic pronunciation analysis and instant feedback.",
+    url: "https://cribro-english-170162955981.us-west1.run.app/",
+    label: "cribro-english.run.app",
+    status: "live",
+    imageUrl: "/cribro_coach_logo.png", // The user uploaded a logo. Please ensure the file is named cribro_coach_logo.png and placed in the /public folder
   },
 ];
 
@@ -233,10 +248,10 @@ export default function Apps() {
                     </h2>
 
                     {/* App image (uncropped) */}
-                    {app.id === "cribro-journal" && (
-                      <div className="mb-5 overflow-hidden rounded bg-black/20 p-2 flex items-center justify-center">
+                    {app.imageUrl && (
+                      <div className="mb-5 overflow-hidden rounded bg-black/20 p-2 flex items-center justify-center min-h-[140px]">
                         <img
-                          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663489474725/R7k6sYKTkLq9Ymom2yutju/og_cribro_journal_45f128b3.png"
+                          src={app.imageUrl}
                           alt={app.name}
                           className="w-full group-hover:opacity-90 transition-opacity"
                           style={{ maxHeight: "160px", objectFit: "contain" }}
